@@ -1,0 +1,141 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1em;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+nav ul li a.active::before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+
+/* Hero section */
+main {
+    display: flex;
+    gap: 8em;
+    margin-top: 11em;
+}
+
+.left-col {
+    width: 45%;
+}
+
+.right-col {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 5.2rem;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    margin: 0;
+}
+
+.sub-heading {
+    font-size: 1.8rem;
+}
+
+.cta-btns {
+    margin: 5em 0;
+}
+
+.cta-btns, .secondary-cta {
+    display: flex;
+    gap: 2em;
+}
+
+.primary-cta {
+    background-color: #F1E2D1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 1.9em;
+    padding: 1em 2em;
+}
+
+.secondary-cta {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 0;
+    align-items: center;
+}
+
+.secondary-cta svg {
+    width: 20px;
+    
+}
+
+.news {
+    display: flex;
+    gap: 3em;
+    padding: 5em;
+    border: 1px solid black;
+    border-radius: .8em;
+    position: relative;
+}
+
+.news::before {
+    position: absolute;
+    content: "";
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='115' height='108' viewBox='0 0 115 108' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M57 21L52.5216 17.9792L55.7872 13.1377L60.2657 16.1584L57 21Z' fill='%23DCBCFA'/%3e%3cpath d='M46 44L50.2569 40.6742L54.468 46.0642L50.2111 49.39L46 44Z' fill='%23480CA7' fill-opacity='0.9'/%3e%3cpath d='M75 91L70.6789 90.1601L71.4116 86.3906L75.7327 87.2306L75 91Z' fill='%234BC8EF' fill-opacity='0.65'/%3e%3cpath d='M3.00002 23L12.8744 28.701L9.95444 33.7586L0.0800171 28.0576L3.00002 23Z' fill='%23F54721'/%3e%3cpath d='M6.00002 0L23.3067 1.819L22.5917 8.62153L5.28504 6.80253L6.00002 0Z' fill='%23BA3E03' fill-opacity='0.45'/%3e%3cpath d='M66 106L58.7105 107.285L57.87 102.519L65.1596 101.234L66 106Z' fill='%23FFED36'/%3e%3cpath d='M69.43 93.715C69.43 94.6622 68.6622 95.43 67.715 95.43C66.7678 95.43 66 94.6622 66 93.715C66 92.7678 66.7678 92 67.715 92C68.6622 92 69.43 92.7678 69.43 93.715Z' fill='%23FF21FB' fill-opacity='0.85'/%3e%3cpath d='M101.43 4.715C101.43 5.66217 100.662 6.43 99.715 6.43C98.7678 6.43 98 5.66217 98 4.715C98 3.76783 98.7678 3 99.715 3C100.662 3 101.43 3.76783 101.43 4.715Z' fill='%23DCBCFA' fill-opacity='0.75'/%3e%3cpath d='M15.43 46.715C15.43 48.7667 13.7668 50.43 11.715 50.43C9.66328 50.43 8.00002 48.7667 8.00002 46.715C8.00002 44.6633 9.66328 43 11.715 43C13.7668 43 15.43 44.6633 15.43 46.715Z' fill='%23F62584'/%3e%3cpath d='M6.22585 84.5391L13.6942 88.6789L6.37488 93.0769L6.22585 84.5391Z' fill='%23DCBCFA'/%3e%3cpath d='M111.576 11.8305L109.321 9.2369L111.915 6.98233L114.17 9.57592L111.576 11.8305Z' fill='%2303A3F5' fill-opacity='0.9'/%3e%3cpath d='M18.966 51.5783L17.6672 58.2602L12.5299 53.7944L18.966 51.5783Z' fill='%23F54721' fill-opacity='0.75'/%3e%3cpath d='M103.295 20.2364L100.553 22.326L100.354 25.7681L98.2644 23.0257L94.8224 22.8268L97.5648 20.7372L97.7636 17.2952L99.8532 20.0376L103.295 20.2364Z' fill='%23FF21FB' fill-opacity='0.85'/%3e%3c/svg%3e ");
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    z-index: 2;
+}
+
+p.employees {
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 200;
+}
+
+p.details {
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: ;
+}
+
+/* Roght column gallery */
